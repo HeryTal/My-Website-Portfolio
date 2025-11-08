@@ -1,6 +1,6 @@
 import config from '../../../config.json';
 
-const sumfetch = async (args: string[]): Promise<string> => {
+const profile = async (args: string[]): Promise<string> => {
   if (config.ascii === 'RAHERINIRINA Jocelyn') {
     return `                                                  
              @@@@@@@@@@@@@                   sumfetch: summary display
@@ -14,7 +14,7 @@ const sumfetch = async (args: string[]): Promise<string> => {
 @@             .@@@@@@@@@@.          @@      CONTACT 
  @@           @@          @@        @@       <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
   @@           @@        @@        @@        <u><a href="https://github.com/${config.social.github}" target="_blank">github.com/${config.social.github}</a></u>
-   @@             @@@@@@          @@         <u><a href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin.com/in/${config.social.linkedin}</a></u>
+   @@             @@@@@@          @@         <u><a href="https://www.linkedin.com/in/jocelyn-raherinirina-ab78a9259/" target="_blank">linkedin.com/in/${config.social.linkedin}</a></u>
      @@@                        @@@         -----------
         @@@                  @@@ @@         
          @|  @@@@@@@@@@@@@@@@   @@          
@@ -33,7 +33,7 @@ const sumfetch = async (args: string[]): Promise<string> => {
 ▐▓        > RAHERINIRINA           ▐▓        CONTACT 
 ▐▓                                 ▐▓        <u><a href="mailto:${config.email}" target="_blank">${config.email}</a></u>
 ▐▓▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▓        <u><a href="https://github.com/${config.social.github}" target="_blank">github.com/${config.social.github}</a></u>
-   ▓▓      ▐▓▓    ▓▓    ▐▓▓     ▓▓           <u><a href="https://linkedin.com/in/${config.social.linkedin}" target="_blank">linkedin.com/in/${config.social.linkedin}</a></u>
+   ▓▓      ▐▓▓    ▓▓    ▐▓▓     ▓▓           <u><a href="https://www.linkedin.com/in/jocelyn-raherinirina-ab78a9259/" target="_blank">linkedin.com/in/${config.social.linkedin}</a></u>
     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓           -----------
       ▓▓▓   ▐▓▓   ▓▓   ▓▓▓   ▓▓▀           
         ▀▓▓▄▄ ▀▓▓▄▓▓▄▓▓▓▄▄▓▓▀               
@@ -43,4 +43,4 @@ const sumfetch = async (args: string[]): Promise<string> => {
   }
 };
 
-export default sumfetch;
+export default profile;

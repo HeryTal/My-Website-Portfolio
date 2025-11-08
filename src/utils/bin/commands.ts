@@ -2,6 +2,7 @@
 
 import * as bin from './index';
 import config from '../../../config.json';
+import headshot from '../../assets/profile.jpeg';
 
 // Help
 export const help = async (args: string[]): Promise<string> => {
@@ -133,16 +134,21 @@ export const sudo = async (args?: string[]): Promise<string> => {
 // Banner
 export const banner = (args?: string[]): string => {
   return `
+
+  <div style="display: inline-flex; align-items: center;">
+    <img src="${headshot.src}" alt="profile" style="width: 200px; height: 200px; border-radius: 50%; margin-right: 10px;" />
 ██████╗  █████╗ ██╗  ██╗███████╗██████╗ ██╗███╗   ██╗██╗██████╗ ██╗███╗   ██╗ █████╗ 
 ██╔══██╗██╔══██╗██║  ██║██╔════╝██╔══██╗██║████╗  ██║██║██╔══██╗██║████╗  ██║██╔══██╗
 ██████╔╝███████║███████║█████╗  ██████╔╝██║██╔██╗ ██║██║██████╔╝██║██╔██╗ ██║███████║
 ██╔══██╗██╔══██║██╔══██║██╔══╝  ██╔══██╗██║██║╚██╗██║██║██╔══██╗██║██║╚██╗██║██╔══██║
 ██║  ██║██║  ██║██║  ██║███████╗██║  ██║██║██║ ╚████║██║██║  ██║██║██║ ╚████║██║  ██║
 ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝
-                                                                                     
+   </div>                                                                              
 
 Type 'help' to see the list of available commands.
-Type 'sumfetch' to display summary.
+Type 'profile' to display my profile.
+type 'projects' to see my projects.
+Type 'readme' to display my competences.
 Type 'repo' or click <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.repo}" target="_blank">here</a></u> for the Github repository.
 `;
 };
